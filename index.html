@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedestal</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="script.js"></script>
+
+
+</head>
+
+<body>
+
+    <header class="main-header">
+        <div class="top-bar">
+            <div class="container">
+                <div class="contact-info">
+                    <span>Call Us +91 99299 34909<strong></strong></span>
+                </div>
+            </div>
+        </div>
+
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <img src="images/pedestal.logo.png" alt="pedestal Logo">
+                </div>
+                <ul class="nav-links">
+                    <li class="dropdown" style="left: 829px">
+                        <a href="#"><i class="fa fa-bars"></i> All Courses</a>
+
+                        <div class="dropdown-menu" id="courses-list">
+                            <!-- JS se courses add honge -->
+                        </div>
+                    </li>
+                    <li style="left: 748px"><a href="#">Blog</a></li>
+                    <li style="left: 758px"><a href="#">Corporate</a></li>
+                    <li style="left: 768px"><a href="#">Institutions</a></li>
+                    <li style="left: 778px"><a href="#">Work With Us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section class="breadcrumb-nav">
+        <div class="container">
+            <ul class="breadcrumb-links">
+                <li><a href="#">Home</a></li>
+                <li class="chevron">></li>
+                <li><a href="#">Software Development</a></li>
+                <li class="chevron">></li>
+                <li class="active-page">Full Stack Developer Course Training in Jaipur</li>
+            </ul>
+        </div>
+    </section>
+    <section class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Full Stack Developer Course Training in Jaipur</h1>
+                <p class="sub-heading">With Job Interview Guarantee (JIG)*</p>
+
+                <p class="description">
+                    Join India's leading Full Stack Development Course that is based on an industry-relevant
+                    curriculum, learn from expert faculty who have hands-on experience, and get guaranteed job
+                    interviews* with our 2000+ hiring partners until you land your first job.
+                </p>
+
+                <p class="tc-apply">* Terms and Conditions apply</p>
+
+                <div class="stats-container">
+                    <div class="stat-item">
+                        <i class="fas fa-user-graduate"></i>
+                        <div>
+                            <span class="stat-title">Students Enrolled</span>
+                            <span class="stat-value">32k</span>
+                        </div>
+                    </div>
+                    <div class="stat-item">
+                        <i class="fas fa-comments"></i>
+                        <div>
+                            <span class="stat-title">Testimonials</span>
+                            <span class="stat-value">View All</span>
+                        </div>
+                    </div>
+                    <div class="stat-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <span class="stat-title">Duration</span>
+                            <span class="stat-value">6 Months / 250 Hours</span>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="btn-enquiry">Quick Enquiry</button>
+            </div>
+        </div>
+    </section>
+
+    <!dOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Div as Dropdown</title>
+    </head>
+
+    <body>
+
+        <script>
+            const dropdown = document.querySelector('.dropdown');
+            const selected = dropdown.querySelector('.dropdown-selected');
+            const list = dropdown.querySelector('.dropdown-list');
+            const items = dropdown.querySelectorAll('.dropdown-item');
+
+            // Toggle dropdown on click
+            selected.addEventListener('click', () => {
+                list.classList.toggle('show');
+            });
+
+            // Handle item selection
+            items.forEach(item => {
+                item.addEventListener('click', () => {
+                    selected.textContent = item.textContent;
+                    list.classList.remove('show');
+                });
+            });
+
+            // Close dropdown if clicked outside
+            document.addEventListener('click', (event) => {
+                if (!dropdown.contains(event.target)) {
+                    list.classList.remove('show');
+                }
+            });
+        </script>
+
+    </body>
+
+    </html>
+
+    <div class="container" style="margin-top: 20px;margin-bottom: 20px;">
+        <h2 class="presence-heading">Course Path</h2>
+
+        <div class="course-grid" id="courseGrid" style="margin-left: 39px;">
+
+            <div class="course-box">Understanding of Front-end Development</div>
+            <div class="course-box">Fundamentals of Web Designing and UI</div>
+            <div class="course-box">Understanding of Back-end Development</div>
+
+            <div class="course-box">Fundamentals of Code and UI</div>
+            <div class="course-box">RESTful API Development and Integration</div>
+            <div class="course-box">3rd Party Integrations and Deployment</div>
+
+            <div class="course-box">Database - MySQL and MongoDB</div>
+            <div class="course-box">Live Projects and Case Studies</div>
+            <div class="course-box">Real World Applications</div>
+
+            <div class="course-box">Pre Interview Preparation</div>
+
+        </div>
+        </section>
+    </div>
+    </div>
+    </section>
+    <nav class="secondary-nav">
+        <div class="container">
+            <ul class="sec-nav-links">
+                <li><a href="#highlights">Program Highlights</a></li>
+
+                <li><a href="#why-us">pedestal</a></li>
+                <li><a href="#faqs">FAQs</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section id="highlights" class="highlights-section">
+        <div class="container">
+            <h2 class="section-title">Program Highlights</h2>
+
+            <div class="highlights-grid">
+                <div class="highlight-item">
+                    <div class="icon-box">
+                        <img src="images/top notch faculty.png" alt="Top-Notch Faculty">
+                    </div>
+                    <p>Top-Notch Faculty</p>
+                </div>
+
+                <div class="highlight-item">
+                    <div class="icon-box">
+                        <img src="images/coding.jpg" alt="Assignments">
+                    </div>
+                    <p>Assignments and Coding Challenges</p>
+                </div>
+
+                <div class="highlight-item">
+                    <div class="icon-box">
+                        <img src="images/interview.png" alt="Job Interviews">
+                    </div>
+                    <p>Guaranteed Job Interviews</p>
+                </div>
+
+                <div class="highlight-item">
+                    <div class="icon-box">
+                        <img src="images/framing-landscape-while-traveling.jpg" alt="Real-life Projects">
+                    </div>
+                    <p>Real-life Projects and Bootcamps</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="skills-section">
+        <div class="container">
+            <h2 class="section-heading">Skills Covered</h2>
+
+            <div class="skills-grid" id="skillsGrid">
+                <div class="skill-card">
+                    <img src="images/core java.jpg" alt="Core Java">
+                    <p>Core Java</p>
+                </div>
+                <div class="skill-card">
+                    <img src="images/advanced java.jpg" alt="Advanced Java">
+                    <p>Advanced Java</p>
+                </div>
+                <div class="skill-card">
+                    <img src="images/html.png" alt="HTML">
+                    <p>HTML</p>
+                </div>
+                <div class="skill-card">
+                    <img src="images/css.png" alt="CSS">
+                    <p>CSS</p>
+                </div>
+
+                <div class="skill-card extra-skill">
+                    <img src="images/javascript.png" alt="JavaScript">
+                    <p>JavaScript</p>
+                </div>
+                <div class="skill-card extra-skill">
+                    <img src="images/reactjs.png" alt="ReactJS">
+                    <p>ReactJS</p>
+                </div>
+                <div class="skill-card extra-skill">
+                    <img src="images/node.jpg" alt="Node.js">
+                    <p>Node.js</p>
+                </div>
+                <div class="skill-card extra-skill">
+                    <img src="images/my sql.png" alt="MySQL">
+                    <p>MySQL</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section class="tools-section">
+        <div class="container">
+            <h2 class="section-heading">Tools Covered</h2>
+
+            <div class="tools-grid">
+                <div class="tool-card">
+                    <img src="images/eclipse.png" alt="Eclipse">
+                    <p>Eclipse</p>
+                </div>
+                <div class="tool-card">
+                    <img src="images/postman.png" alt="Postman">
+                    <p>Postman</p>
+                </div>
+                <div class="tool-card">
+                    <img src="images/1spring.png" alt="Spring Tool Suite">
+                    <p>Spring Tool Suite</p>
+                </div>
+                <div class="tool-card">
+                    <img src="images/mysql workbench.png" alt="MySQL workbench">
+                    <p>MySQL workbench</p>
+                </div>
+
+                <div class="tool-card">
+                    <img src="images/visual studio.jpg" alt="VS Code">
+                    <p>VS Code</p>
+                </div>
+                <div class="tool-card">
+                    <img src="images/maven.jpg" alt="Maven">
+                    <p>Maven</p>
+                </div>
+                <div class="tool-card">
+                    <img src="images/1spring.png" alt="Spring">
+                    <p>Spring</p>
+                </div>
+                <div class="tool-card">
+                    <img src="images/springboot.jpg" alt="Spring Boot">
+                    <p>Spring Boot</p>
+                </div>
+
+                <div class="tool-card">
+                    <img src="images/springboot.jpg" alt="Hibernate">
+                    <p>Hibernate</p>
+                </div>
+                <div class="tool-card">
+                    <img src="images/restapi.png" alt="REST API">
+                    <p>REST API</p>
+                </div>
+                <div class="tool-card">
+                    <img src="images/git.jpg" alt="GIT">
+                    <p>GIT</p>
+                </div>
+                <div class="tool-card">
+                    <img src="images/apache.png" alt="Apache Tomcat">
+                    <p>Apache Tomcat</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="projects-section">
+        <div class="container" style="margin-top: 10px">
+            <h2 class="presence-heading">Projects</h2>
+
+            <div class="accordion">
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span class="icon">+</span>
+                        <span class="title">Project 1: To-Do List App</span>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Is project mein aap HTML, CSS aur JavaScript ka use karke ek functional task manager
+                            banayenge jo data ko local storage mein save karega.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span class="icon">+</span>
+                        <span class="title">Project 2: Recipe App</span>
+                    </div>
+                    <div class="accordion-content">
+                        <p>API integration seekhne ke liye ye best project hai. Isme user recipes search kar sakta hai
+                            aur ingredients dekh sakta hai.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span class="icon">+</span>
+                        <span class="title">Project 3: E-Commerce Store</span>
+                    </div>
+                    <div class="accordion-content">
+                        <p>ReactJS ka use karke ek modern shopping site ka frontend, jisme cart functionality aur
+                            product filters honge.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="case-studies-section">
+        <div class="container">
+            <h2 class="section-title">Real-life Interview Case Studies</h2>
+
+            <div class="accordion">
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span class="icon">+</span>
+                        <span class="title">Project 1: 1. Profitability & Turnaround Cases</span>
+                    </div>
+                    <div class="accordion-content">
+                        <p>These cases focus on diagnosing why a business is losing money and developing a turnaround
+                            strategy. </p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span class="icon">+</span>
+                        <span class="title">Project 2: Taskworld</span>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Taskworld ke case mein hum project management tools ke real-time architecture aur
+                            collaboration features ki implementation ko detail mein samjhenge.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span class="icon">+</span>
+                        <span class="title">Project 3: Dropbox</span>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Dropbox case study focus karti hai cloud storage, file synchronization algorithms aur
+                            high-availability systems par.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <section class="salary-trends-section">
+        <div class="container">
+            <h2 class="section-title">Career Progression and Salary Trends</h2>
+            <div class="chart-wrapper">
+                <section class="career-salary-section">
+                </section>
+                <div class="chart-container">
+                    <canvas id="salaryChart"></canvas>
+                </div>
+    </section>
+    </div>
+    </div>
+    </section>
+    <section id="why-us" class="why-excelr-section">
+        <div class="container">
+            <h2 class="section-heading">Why Pedestal</h2>
+
+            <div class="why-grid">
+                <div class="why-card">
+                    <img src="images/curriculum.png" alt="Industry-Based Course Curriculum">
+                    <p>Industry-Based Course Curriculum</p>
+                </div>
+                <div class="why-card">
+                    <img src="images/courses.jpg" alt="Eight Value Added Courses">
+                    <p>Eight Value Added Courses</p>
+                </div>
+                <div class="why-card">
+                    <img src="images/bootcamp.jpg" alt="Internship and Bootcamps">
+                    <p>Work Hands-on with 100+ Hours of Internship and 10+ Bootcamps</p>
+                </div>
+
+                <div class="why-card">
+                    <img src="images/guaranted job.jpg" alt="Guaranteed Job Interviews">
+                    <p>Guaranteed Job Interview Calls with our 2000+ partner companies</p>
+                </div>
+                <div class="why-card">
+                    <img src="images/support.jpg" alt="Support Channels">
+                    <p>Support through WhatsApp, Calls, & Emails</p>
+                </div>
+                <div class="why-card">
+                    <img src="images/elearning.jpg" alt="Lifetime Access">
+                    <p>Lifetime eLearning Access</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="curriculum" class="curriculum-section">
+        <div class="container">
+            <h2 class="section-title">Course Curriculum</h2>
+
+            <div class="accordion">
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span class="icon">+</span>
+                        <span class="title">Module 1 - HTML & CSS</span>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Introduction to Web Development, HTML5 Tags, CSS3 Styling, Flexbox, and Grid layouts.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span class="icon">+</span>
+                        <span class="title">Module 2 - JAVASCRIPT</span>
+                    </div>
+                    <div class="accordion-content">
+                        <p>ES6+ features, DOM Manipulation, Event Listeners, Closures, and Async/Await.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span class="icon">+</span>
+                        <span class="title">Module 3 - REACTJS</span>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Components, Props, State, Hooks (useState, useEffect), and React Router.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span class="icon">+</span>
+                        <span class="title">Module 4 - MERN STACK</span>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Full stack integration using MongoDB, Express, React, and Node.js.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span class="icon">+</span>
+                        <span class="title">Module 5 - GITHUB</span>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Version control basics, branching, merging, and pull requests.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span class="icon">+</span>
+                        <span class="title">Module 6 - CORE JAVA</span>
+                    </div>
+                    <div class="accordion-content">
+                        <p>OOPs Concepts, Exception Handling, Collections, and Multithreading.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span class="icon">+</span>
+                        <span class="title">Module 7 - DSA (Data Structures & Algorithms)</span>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Arrays, Linked Lists, Stacks, Queues, Searching, and Sorting algorithms.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span class="icon">+</span>
+                        <span class="title">Module 8 - DATABASE</span>
+                    </div>
+                    <div class="accordion-content">
+                        <p>SQL Queries, Joins, Indexing, and NoSQL basics with MongoDB.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span class="icon">+</span>
+                        <span class="title">Module 9 - SPRING, SPRING JDBC, SPRING MVC, SPRING BOOT &
+                            MICROSERVICES</span>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Dependency Injection, REST APIs, Spring Data JPA, and Microservices architecture.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+
+    <section class="excelr-slider-section">
+        <div class="container">
+            <h2 class="section-title" style="color: #fff;">Why Pedestal</h2>
+
+            <div class="why-excelr-carousel">
+                <div class="carousel-item">
+                    <div class="circle-icon">
+                        <img src="images/trainer.jpg" alt="Trainers">
+                    </div>
+                    <h3>Industry Best Trainers</h3>
+                    <p>Faculty is our forte. Trainers at pedestal possess extensive real-time experience and are
+                        considered the best in the industry.</p>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="circle-icon">
+                        <img src="images/industry based curriculum.jpg" alt="Curriculum">
+                    </div>
+                    <h3>Tailored Course Curriculum</h3>
+                    <p>Pedestal training curriculum is tailored according to the trending industry needs, designed by
+                        top-notch experts.</p>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="circle-icon">
+                        <img src="images/lms.jpg" alt="LMS">
+                    </div>
+                    <h3>Access to E-learning</h3>
+                    <p>Participants will be given access to recorded sessions and state-of-the-art Learning Management
+                        System (LMS).</p>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="circle-icon">
+                        <img src="images/training.jpg" alt="Training">
+                    </div>
+                    <h3>Blended Training Model</h3>
+                    <p>Pedestal offers a blend of classroom, instructor-led online, and e-learning for a comprehensive
+                        experience.</p>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="circle-icon">
+                        <img src="images/support.jpg" alt="Support">
+                    </div>
+                    <h3>Post-Training Support</h3>
+                    <p>Extensive support even after completion through forums, WhatsApp, and social media platforms.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="faqs" class="faq-section">
+        <div class="container">
+            <h2 class="section-title">FAQs</h2>
+
+            <div class="accordion">
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span class="icon">+</span>
+                        <span class="title">What Is Instructor-Led Online Training?</span>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Instructor-led online training is a live, interactive session conducted by industry experts
+                            where you can ask questions in real-time and get immediate feedback.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span class="icon">+</span>
+                        <span class="title">How Many Batches Can I Attend, If Enrolled For Training?</span>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Once you enroll, you typically get access to multiple batches for a specified duration,
+                            allowing you to revise or complete modules at your own pace.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span class="icon">+</span>
+                        <span class="title">Is This A Live Training Or Recorded Sessions?</span>
+                    </div>
+                    <div class="accordion-content">
+                        <p>This is primarily live training. However, you also get access to high-quality recorded
+                            sessions of every class for later reference.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span class="icon">+</span>
+                        <span class="title">What If I Miss A Live Session?</span>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Don't worry! Every live session is recorded and uploaded to your Learning Management System
+                            (LMS) within 24 hours.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span class="icon">+</span>
+                        <span class="title">Will I Get A Full Stack Development Course Completion Certification From
+                            Pedestal</span>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Yes, upon successful completion of the course and projects, you will receive a globally
+                            recognized certificate from Pedestal</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span class="icon">+</span>
+                        <span class="title">Whom Should I Contact If I Want More Information About The Training?</span>
+                    </div>
+                    <div class="accordion-content">
+                        <p>You can reach out to our support team through WhatsApp, email, or by calling our counselor
+                            directly for detailed information.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span class="icon">+</span>
+                        <span class="title">What Are The Different Modes Of Payment Available?</span>
+                    </div>
+                    <div class="accordion-content">
+                        <p>We support various payment modes including Credit/Debit Cards, Net Banking, UPI, and No-Cost
+                            EMI options.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="global-presence" class="global-presence-section">
+        <div class="container" style="    margin-top: 16px;">
+            <h2 class="presence-heading">Global Presence</h2>
+
+            <div class="global-flex-container" style="margin-left: 122px;">
+                <div class="global-text">
+                    <p>
+                        Pedestal Techno World Private Limited (often referred to as Pedestal EdTech) is an emerging
+                        Indian EdTech company with a rapidly expanding footprint, specializing in bridging the gap
+                        between industry requirements and student skills. While primarily focused on expanding within
+                        India, they have established an international presence to support their global, industry-aligned
+                        training programs.
+                    </p>
+                    <p>
+                        The company positions itself as an "India's Leading EdTech Company" with a focus on tier 2 and 3
+                        cities in India, while maintaining a strategic office in Dubai to facilitate international
+                        collaborations and certifications.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="pedestal-footer">
+        <div class="footer-top">
+            <div class="footer-column">
+                <h3>Organization</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">In Media</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">News Events</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Resources</h3>
+                <ul>
+                    <li><a href="#">Free Quizzes</a></li>
+                    <li><a href="#">Blogs</a></li>
+                    <li><a href="#">Webinars</a></li>
+                    <li><a href="#">Self-Paced Learning</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Lines Of Business</h3>
+                <ul>
+                    <li><a href="#">Work With Us</a></li>
+                    <li><a href="#">Corporate Training</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-middle">
+            <div class="legal-links">
+                <a href="#">Terms And Conditions</a> | <a href="#">Privacy Policy</a> | <a href="#">Refund Policy</a> |
+                <a href="#">Sitemap</a>
+            </div>
+            <div class="social-icons">
+                <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#" class="youtube"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-categories">
+            <p><strong>Emerging Technologies :</strong> <a href="#">Artificial Intelligence</a> | <a href="#">Machine
+                    Learning</a> | <a href="#">AR / VR</a> | <a href="#">IR 4.0</a> | <a href="#">IoT</a> | <a
+                    href="#">Block Chain</a> | <a href="#">Cyber Security</a> | <a href="#">Financial Analytics</a> | <a
+                    href="#">Retail / Supply Chain Analytics</a> | <a href="#">Social Media and Web Analytics</a> | <a
+                    href="#">Forecasting Analytics</a> | <a href="#">Text Mining and NLP</a> | <a href="#">Business
+                    Intelligence</a> | <a href="#">Digital Marketing</a> | <a href="#">RPA</a> | <a href="#">AWS</a> |
+                <a href="#">Cloud Computing</a> | <a href="#">Microsoft Azure</a> | <a href="#">Google Cloud
+                    Platform</a>
+            </p>
+
+            <p><strong>Quality Management :</strong> <a href="#">Lean Six Sigma Green Belt</a> | <a href="#">Lean Six
+                    Sigma Black Belt</a> | <a href="#">ISO</a> | <a href="#">Master Black Belt</a></p>
+
+            <p><strong>Analytics :</strong> <a href="#">Deep Learning</a> | <a href="#">Tableau</a> | <a href="#">Big
+                    Data Hadoop</a> | <a href="#">Business Analytics</a> | <a href="#">Data Analytics</a> | <a
+                    href="#">SPARK</a> | <a href="#">Data Science</a></p>
+
+            <p><strong>Project Management :</strong> <a href="#">PMP®</a> | <a href="#">PMI-ACP®</a> | <a
+                    href="#">PMI-RMP®</a> | <a href="#">PRINCE2</a> | <a href="#">PgMP</a> | <a href="#">CSM</a></p>
+
+            <p><strong>IT Service Management :</strong> <a href="#">ITIL Foundation</a> | <a href="#">ITIL
+                    Intermediate</a></p>
+        </div>
+
+        <div class="footer-disclaimer">
+            <p><strong>DISCLAIMER :</strong></p>
+            <p>• PMI®, PMBOK® Guide, PMP®, PgMP®, CAPM®, PMI-RMP®, PMI-ACP® are registered marks of the Project
+                Management Institute (PMI)®</p>
+            <p>• "ITIL®" is registered trademark of AXELOS, United Kingdom</p>
+            <p>• The Swirl logo TM is a Trade Mark of AXELOS</p>
+            <p>• PRINCE2® is a Registered Trade Mark of AXELOS, United Kingdom</p>
+        </div>
+
+        <div class="footer-bottom-bar">
+            <div class="bottom-item"><i class="fas fa-globe"></i> Drop A Query</div>
+            <div class="bottom-item"><i class="fas fa-phone-alt"></i> Request A Callback</div>
+            <div class="bottom-item"><i class="fas fa-phone"></i> Toll Free +91 99299 34909</div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+</body>
+<script src="index.js"></script>
+
+</html>
