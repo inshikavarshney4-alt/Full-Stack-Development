@@ -34,8 +34,8 @@ document.addEventListener("DOMContentLoaded", function () {
         "Certified Global Business Analyst Program | CGBAP",
         "YouTube Automation, Video Editing and Monetization Mastery | YTEM",
         "Certified Advanced Digital Sales Navigator | CADSN",
-    
-];
+
+    ];
 
     const courseList = document.getElementById("courses-list");
 
@@ -249,5 +249,15 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
-
+plugins: {
+    tooltip: {
+        backgroundColor: "#2563eb";
+        titleColor: "#fff";
+        bodyColor: "#fff";
+        borderColor: "#38bdf8";
+        borderWidth: 1;
+        cornerRadius: 8;
+        padding: 10;
+    }
+}
 
